@@ -1,0 +1,26 @@
+stages:
+  - test
+  - deploy
+
+UnitTest:
+  image: python:3.7.3
+  stage: test
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
+    - python manage.py test
+Deployment:
+  image: ruby:2.4
+  stage: deploy
+  before_script:
+    - gem install dpl
+    - wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  script:
+    - dpl --provider=heroku --app=story7jo --api-key=$HEROKU_API_KEY
+    - export HEROKU_API_KEY=$HEROKU_API_KEY
+  environment:
+    name: production
+    url: story7jo.herokuapp.com
+  only:
+    - master
