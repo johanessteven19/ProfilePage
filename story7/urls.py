@@ -20,6 +20,5 @@ from app7 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.home),
-    url(r'^index.html', views.home),
+    
 ]
