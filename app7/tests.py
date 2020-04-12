@@ -10,5 +10,5 @@ class Story7Test(TestCase):
     
     def test_story7_using_index_func(self):
         found = resolve('/')
-        self.assertEqual(found.func, index)
+        self.assertEqual(found.func, home)
 
