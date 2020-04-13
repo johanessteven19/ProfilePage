@@ -1,7 +1,7 @@
 from django.test import TestCase, Client
 from django.urls import resolve
 
-from .views import home
+from .views import home, show
 from .models import Data
 from .forms import DataForm
 
@@ -37,3 +37,12 @@ class Story7Test(TestCase):
             form.errors['status'],
             ["This field is required."]
         )
+
+    def test_story_using_show_template(self):
+        response = Client().get('')
+        self.assertTemplateUsed(response, 'index.html')
+
+    def test_url2_exist(self):
+        response = Client().get('/show.html')
+        self.assertEqual(response.status_code,302)
+

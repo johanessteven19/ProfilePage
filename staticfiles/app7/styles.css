@@ -1,0 +1,607 @@
+    @font-face {
+      font-family: Oxygen;
+      src: url(oxygen-v9-latin-regular.woff); 
+    }
+    @font-face {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 400;
+      src: url(open-sans-v17-latin-regular.woff); 
+    }
+    @font-face {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 700;
+      src: url(open-sans-v17-latin-700.woff); 
+    }
+    @font-face {
+      font-family: K2D;
+      font-style: normal;
+      font-weight: 200;
+      src: url(k2d-v3-latin-200.woff); 
+    }
+    @font-face {
+      font-family: uni_sansthin_caps;
+      src: url(unisansthin.otf); 
+    }
+    contacth1 {
+        position: absolute;
+        width: 166px;
+        height: 45px;
+        left: 637px;
+        top: 145px;
+        font-family: Oxygen;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 45px;
+        text-align: center;
+        color: #000000;
+    }
+    contact2 {
+        position: absolute;
+        width: 402px;
+        height: 30px;
+        left: 519px;
+        top: 190px;
+        font-family: Oxygen;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+    }
+    fbicon {
+        position: absolute;
+        width: 152px;
+        height: 152px;
+        left: 275px;
+        top: 341px;
+    }
+    gmailicon {
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        left: 620px;
+        top: 324px;
+    }
+    discordicon {
+        position: absolute;
+        width: 185px;
+        height: 185px;
+        left: 1004px;
+        top: 324px;
+    }
+    contactbg {
+        position: absolute;
+        width: 1440px;
+        height: 900px;
+        background-image: url(pink.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    contactfb {
+        position: absolute;
+        width: 197px;
+        height: 30px;
+        left: 253px;
+        top: 529px;
+        font-family: Oxygen;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        
+        color: #000000;
+    }
+    contactgm {
+        position: absolute;
+        width: 384px;
+        height: 30px;
+        left: 528px;
+        top: 529px;
+        font-family: Oxygen;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+    }
+    contactdiscord {
+        position: absolute;
+        width: 206px;
+        height: 30px;
+        left: 993px;
+        top: 529px;
+        font-family: Oxygen;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+    }
+    backhome {
+        position: absolute;
+        width: 149px;
+        height: 30px;
+        left: 1189px;
+        top: 47px;
+        font-family: Oxygen;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+    }
+    profilepic {
+        position: absolute;
+        width: 291px;
+        height: 443px;
+        left: 126px;
+        top: 130px;
+    }
+    profilebg {
+        position: absolute;
+        width: 1440px;
+        height: 2220px;
+        left: 0px;
+        top: 0px;
+        background-image: url(blue.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    profileh1 {
+        position: absolute;
+        width: 198px;
+        height: 33px;
+        left: 570px;
+        top: 121px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        
+        text-align: center;
+        
+        color: #000000;
+    }
+    profileh2 {
+        position: absolute;
+        width: 234px;
+        height: 33px;
+        left: 569px;
+        top: 154px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        
+        text-align: center;
+    }
+    profilebody1 {
+        position: absolute;
+        width: 602px;
+        height: 593px;
+        left: 574px;
+        top: 195px;
+        
+        font-family: K2D;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 31px;
+        
+        color: #000000;
+    }
+    profiletimeline {
+        position: absolute;
+        width: 152px;
+        height: 41px;
+        left: 123px;
+        top: 766px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 41px;
+        
+        text-align: center;
+        
+        color: #000000;
+    }
+    profiletimeobj {
+        position: absolute;
+        width: 35.11px;
+        height: 621px;
+        left: 573.94px;
+        top: 754px;
+    }
+    profilebirth {
+        position: absolute;
+        width: 320px;
+        height: 41px;
+        left: 669px;
+        top: 775px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        
+        text-align: center;
+        
+        color: #000000;
+    }
+    profileprimary {
+        position: absolute;
+        width: 618px;
+        height: 82px;
+        left: 667px;
+        top: 890px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: left;
+        
+        color: #000000;
+    }
+    profilejunior{
+        position: absolute;
+        width: 643px;
+        height: 82px;
+        left: 667px;
+        top: 1031px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: left;
+        
+        color: #000000;
+    }
+    profilesenior{
+        position: absolute;
+        width: 584px;
+        height: 41px;
+        left: 667px;
+        top: 1170px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        
+        text-align: left;
+        
+        color: #000000;
+    }
+    profileuni{
+        position: absolute;
+        width: 716px;
+        height: 82px;
+        left: 667px;
+        top: 1302px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: left;
+        
+        color: #000000;
+    }
+    profileinfo{
+        position: absolute;
+        width: 205px;
+        height: 41px;
+        left: 126px;
+        top: 1598px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 41px;
+        
+        text-align: center;
+        
+        color: #000000;
+    }
+    profileleftrow{
+        position: absolute;
+        width: 345px;
+        height: 471px;
+        left: 554px;
+        top: 1598px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        
+        color: #000000;
+    }
+    profilerightrow{
+        position: absolute;
+        width: 317px;
+        height: 231px;
+        left: 961px;
+        top: 1598px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        
+        color: #000000;
+    }
+    homeprofile{
+        position: absolute;
+        width: 186px;
+        height: 60px;
+        left: 280px;
+        top: 39px;
+        
+        font-family: uni_sansthin_caps;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 60px;
+        
+        text-align: center;
+        
+        color: #FFFFFF;
+    }
+    homemessage{
+        position: absolute;
+        width: 215px;
+        height: 60px;
+        left: 612px;
+        top: 39px;
+        
+        font-family: uni_sansthin_caps;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 60px;
+        
+        text-align: center;
+        
+        color: #FFFFFF;
+    }
+    homecontact{
+        position: absolute;
+        width: 206px;
+        height: 60px;
+        left: 971px;
+        top: 39px;
+        
+        font-family: uni_sansthin_caps;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 60px;
+        
+        text-align: center;
+        
+        color: #FFFFFF;
+    }
+    .button2 {
+         border-radius: 4px;
+         background-color: Transparent;
+         border: none;
+         color: #000000;
+         text-align: center;
+         font-family: uni_sansthin_caps;
+         font-size: 20px;
+         padding: 0px;
+         width: 230px;
+         transition: all 0.5s;
+         cursor: pointer;
+         margin: 5px;
+        }
+    
+        .button2 span {
+         cursor: pointer;
+         display: inline-block;
+         position: relative;
+         transition: 0.5s;
+        }
+    
+        .button2 span:after {
+         content: '\00bb';
+         position: absolute;
+         opacity: 0;
+         top: 0;
+         right: -20px;
+         transition: 0.5s;
+        }
+    
+        .button2:hover span {
+         padding-right: 25px;
+        }
+    
+        .button2:hover span:after {
+         opacity: 1;
+         right: 0;
+        }
+    messagebg {
+        position: absolute;
+        width: 1440px;
+        height: 900px;
+        background-image: url(pale.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+    messagetitle{
+        position: absolute;
+        width: 334px;
+        height: 45px;
+        left: 553px;
+        top: 145px;
+        
+        font-family: Oxygen;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 45px;
+        text-align: center;
+        
+        color: #000000;
+        }
+    messagebody{
+        position: absolute;
+        width: 303px;
+        height: 30px;
+        left: 568px;
+        top: 190px;
+        
+        font-family: K2D;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        
+        color: #000000;
+        }
+    messagebox{
+        position: absolute;
+        width: 667px;
+        height: 464px;
+        left: 387px;
+        top: 277px;
+        
+        background: #F9CC8A;
+        }
+    messagesubmit{
+        position: absolute;
+        width: 62px;
+        height: 29px;
+        left: 953px;
+        top: 748px;       
+        color: #000000;
+       }
+       
+    homecredits{
+    position: absolute;
+    width: 187px;
+    height: 60px;
+    left: 279px;
+    top: 680px;
+    
+    font-family: Uni Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+       }
+    homeaddfriends{
+    position: absolute;
+    width: 298px;
+    height: 60px;
+    left: 570px;
+    top: 650px;
+    
+    font-family: Uni Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+   
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    }
+    homeseefriends{
+    position: absolute;
+    width: 289px;
+    height: 60px;
+    left: 972px;
+    top: 650px;
+    
+    font-family: Uni Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    }
+    addbg {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    background-image: url(addyellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    seebg {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    background-image: url(white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    postable{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 620px;
+    top: 324px;
+    }
+    
+       
+    /* Media Queries: Tablet Landscape */
+    @media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+       }
+
+/* Media Queries: Tabled Portrait */
+    @media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+       }
+       
+    img { max-width: 100%; height: auto; }
+    html { font-size:100%; }
+    @media (min-width: 640px) { body {font-size:1rem;} } 
+    @media (min-width:960px) { body {font-size:1.2rem;} } 
+    @media (min-width:1100px) { body {font-size:1.5rem;} } 
+    
+   
+    
+
+
+       
