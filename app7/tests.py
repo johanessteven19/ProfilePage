@@ -4,6 +4,7 @@ from django.urls import resolve
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 
 from .views import home, show
 from .models import Data
@@ -69,8 +70,7 @@ class Story7FunctionalTest(TestCase):
         chrome_options.add_argument('--no-sandbox')        
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('disable-gpu')
-        chrome_path = r'/usr/local/bin/chromedriver'
-        self.selenium  = webdriver.Chrome(executable_path=chrome_path)
+        self.selenium  = webdriver.Chrome(ChromeDriverManager().install())
         super(Story7FunctionalTest, self).setUp()
 
     def tearDown(self):
