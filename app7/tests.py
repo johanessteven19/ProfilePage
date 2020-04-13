@@ -15,4 +15,4 @@ class Story7Test(TestCase):
     def test_inside_html(self):
         response=Client().get('')
         response_content = response.content.decode('utf-8')
-        self.assertIn("tes", response_content)
+        self.assertIn("Hello, how are you today?", response_content)
