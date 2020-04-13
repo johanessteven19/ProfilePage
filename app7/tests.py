@@ -12,3 +12,7 @@ class Story7Test(TestCase):
         found = resolve('/')
         self.assertEqual(found.func, home)
 
+    def test_inside_html(self):
+        response=Client().get('')
+        response_content = response.content.decode('utf-8')
+        self.assertIn("tes", response_content)
