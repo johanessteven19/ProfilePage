@@ -2,7 +2,7 @@ stages:
   - test
   - deploy
 
-UnitTest:
+unittest:
   image: python:3.7.3
   stage: test
   before_script:
@@ -19,11 +19,11 @@ UnitTest:
     - python manage.py runserver 8000 &
   when: on_success
   script:
-    - apt-get update -qy
-    - apt-get install -y python-dev python-pip
-    - pip install -r requirements.txt
-    - coverage run --include='status/*' manage.py test 
+    - coverage run --source='.' manage.py test app7
     - coverage report -m
+  only:
+    - master
+
 
 Deployment:
   image: ruby:2.4
