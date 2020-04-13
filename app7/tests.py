@@ -96,5 +96,10 @@ class Story7FunctionalTest(TestCase):
 
         view = selenium.find_element_by_id('viewbtn')
         view.click()
+        selenium.get('https://story7jo.herokuapp.com/confirm.html')
+        time.sleep(3)   
+        
+        confirm = selenium.find_element_by_id('subbtn')
+        confirm.click()
         selenium.get('https://story7jo.herokuapp.com/show.html')
-        time.sleep(7)   
+        time.sleep(3)

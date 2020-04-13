@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME STORY 7</title>
+    <link rel="stylesheet" href="{%static 'app7/styles.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'app7/css/bootstrap.min.css'%}">
+    <style>
+        .wrapper {
+            text-align: center;
+        }
+        
+        .button {
+            position: absolute;
+            top: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <backhome><a href="show.html"><button class="button2" id="viewbtn"><span>See Status </span></button></a></backhome>
+    <messagetitle>Are you sure?</messagetitle><br><br><br><br>
+           <messagebody> <button type="submit" id="subbtn"><a href="show.html">Yes</a></button><br>
+            <button type="cancel" id="canbtn"><a href="index.html">No</a></button></messagebody>
+
+   
+    </body> 

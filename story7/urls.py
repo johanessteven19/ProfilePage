@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^$', views.home),
     url(r'^index.html', views.home),
     url(r'^show.html', views.show),
+    url(r'^confirm.html', views.confirm),
 ]

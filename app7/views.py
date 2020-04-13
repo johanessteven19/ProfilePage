@@ -10,10 +10,13 @@ def home(request):
         if form.is_valid():
             data_item = form.save(commit=False)
             data_item.save()
-            return render(request, 'index.html')
+            return render(request, 'confirm.html')
     else:
         form = DataForm()
     return render(request, 'index.html', {'form' : form})
+
+def confirm(request):
+    return render(request, 'confirm.html')
 
 def show(request):
     listname = Data.objects.all()
