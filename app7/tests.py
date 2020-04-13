@@ -62,36 +62,36 @@ class Story7Test(TestCase):
 
 
 ## -------- Functional Test ---------
-# class Story7FunctionalTest(TestCase):
-#     def setUp(self):
-#         chrome_options = Options()
-#         chrome_options.add_argument('--dns-prefetch-disable')
-#         chrome_options.add_argument('--no-sandbox')        
-#         chrome_options.add_argument('--headless')
-#         chrome_options.add_argument('disable-gpu')
-#         chrome_path = r'/usr/local/bin/chromedriver'
-#         self.selenium  = webdriver.Chrome(executable_path=chrome_path)
-#         super(Story7FunctionalTest, self).setUp()
+class Story7FunctionalTest(TestCase):
+    def setUp(self):
+        chrome_options = Options()
+        chrome_options.add_argument('--dns-prefetch-disable')
+        chrome_options.add_argument('--no-sandbox')        
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('disable-gpu')
+        chrome_path = r'/usr/local/bin/chromedriver'
+        self.selenium  = webdriver.Chrome(executable_path=chrome_path)
+        super(Story7FunctionalTest, self).setUp()
 
-#     def tearDown(self):
-#         self.selenium.quit()
-#         super(Story7FunctionalTest, self).tearDown()
+    def tearDown(self):
+        self.selenium.quit()
+        super(Story7FunctionalTest, self).tearDown()
 
-#     def test_input_todo(self):
-#         selenium = self.selenium
-#         # Opening the link we want to test
-#         selenium.get('https://story7jo.herokuapp.com/')
-#         # selenium.get('localhost:8000')
-#         # find the form element
-#         selenium.implicitly_wait(1)
+    def test_input_todo(self):
+        selenium = self.selenium
+        # Opening the link we want to test
+        selenium.get('https://story7jo.herokuapp.com/')
+        # selenium.get('localhost:8000')
+        # find the form element
+        selenium.implicitly_wait(1)
 
-#         name = selenium.find_element_by_name('name')
-#         status = selenium.find_element_by_name('status')
+        name = selenium.find_element_by_name('name')
+        status = selenium.find_element_by_name('status')
 
-#         name.send_keys("namates")
-#         status.send_keys('hello')
-#         submit = selenium.find_element_by_id('statussubmit')
-#         submit.click()
+        name.send_keys("namates")
+        status.send_keys('hello')
+        submit = selenium.find_element_by_id('statussubmit')
+        submit.click()
 
-#         view = selenium.find_element_by_id('viewbtn')
-#         view.click()
+        view = selenium.find_element_by_id('viewtn')
+        view.click()
