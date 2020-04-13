@@ -11,7 +11,7 @@ from .models import Data
 from .forms import DataForm
 
 import time
-Create your tests here.
+#Create your tests here.
 
 class Story7Test(TestCase):
     def test_url_exist(self):
