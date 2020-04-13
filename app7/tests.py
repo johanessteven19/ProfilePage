@@ -27,7 +27,7 @@ class Story7Test(TestCase):
         self.assertEqual(data_count, 1)
 
     def test_form_validation_for_blank_items(self):
-        form = DataForm(data={'name':'123','status':''})
+        form = DataForm(data={'name':'','status':''})
         self.assertFalse(form.is_valid())
         self.assertEqual(
             form.errors['name'],
