@@ -1,6 +1,7 @@
 from django.test import TestCase, Client
 from django.urls import resolve
 from .views import home
+from .models import Data
 
 # Create your tests here.
 class Story7Test(TestCase):
@@ -16,3 +17,8 @@ class Story7Test(TestCase):
         response=Client().get('')
         response_content = response.content.decode('utf-8')
         self.assertIn("Hello, how are you today?", response_content)
+
+    def test_model_can_create_new_status(self):
+        Data.objects.create(name='namates', status='halo')
+        data_count = Data.objects.all().count()
+        self.assertEqual(data_count, 2)
