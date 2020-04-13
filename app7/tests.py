@@ -44,5 +44,5 @@ class Story7Test(TestCase):
 
     def test_url2_exist(self):
         response = Client().get('/show.html')
-        self.assertEqual(response.status_code,302)
+        self.assertEqual(response.status_code,200)
 
