@@ -5,11 +5,11 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
-
 from .views import home, show
 from .models import Data
 from .forms import DataForm
 
+import time
 # Create your tests here.
 
 class Story7Test(TestCase):
@@ -93,5 +93,7 @@ class Story7FunctionalTest(TestCase):
         submit = selenium.find_element_by_id('statussubmit')
         submit.click()
 
-        view = selenium.find_element_by_id('viewtn')
+        view = selenium.find_element_by_id('viewbtn')
         view.click()
+        selenium.get('https://story7jo.herokuapp.com/show.html')
+        time.sleep(5)   
