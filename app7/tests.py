@@ -21,4 +21,4 @@ class Story7Test(TestCase):
     def test_model_can_create_new_status(self):
         Data.objects.create(name='namates', status='halo')
         data_count = Data.objects.all().count()
-        self.assertEqual(data_count, 2)
+        self.assertEqual(data_count, 1)
